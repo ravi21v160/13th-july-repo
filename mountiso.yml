@@ -1,0 +1,7 @@
+---
+ - name: to mount the iso image to install packages
+   hosts: nodes
+   tasks:
+     - name: to mount the iso image so that we can install the packages
+       command: "mount /dev/sr0 /mnt"
+...
