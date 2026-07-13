@@ -1,0 +1,9 @@
+---
+ - name: to install the package
+   hosts: nodes
+   tasks:
+     - name: to install the package by using playbook
+       yum:
+         name: httpd
+         state: present
+...
